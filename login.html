@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-box {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 8px;
+      width: 300px;
+      color: white;
+      text-align: center;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #38bdf8;
+      border: none;
+      color: black;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+    }
+
+    p {
+      font-size: 12px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="login-box">
+  <h2>Login</h2>
+
+  <input type="email" placeholder="Enter Email">
+  <input type="password" placeholder="Enter Password">
+
+  <button onclick="login()">Login</button>
+
+  <p id="message"></p>
+</div>
+
+<script>
+  function login() {
+    document.getElementById("message").innerText = "Login button clicked!";
+  }
+</script>
+
+</body>
+</html>
